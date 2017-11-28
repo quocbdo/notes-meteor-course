@@ -11,7 +11,7 @@ const unauthenticatedPages = ['/', '/signup'];
 const authenticatedPages = ['/dashboard'];
 const onEnterPublicPage = () => {
   if (Meteor.userId()) {
-    browserHistory.replace('/dashboard'); 
+    browserHistory.replace('/dashboard');
   }
 };
 const onEnterPrivatePage = () => {
@@ -23,13 +23,7 @@ export const onAuthChange = (isAuthenticated) => {
   const pathname = browserHistory.getCurrentLocation().pathname;
   const isUnauthenticatedPage = unauthenticatedPages.includes(pathname);
   const isAuthenticatedPage = authenticatedPages.includes(pathname);
-  // console.log('isAuthenticated', isAuthenticated);
 
-  // if on unauth page AND logged in, redirect to /links
-    // browserHistory.push
-  // if on auth page AND not logged in, redirect to /
-    // browserHistory.push
-  // No else
   if (isUnauthenticatedPage && isAuthenticated) {
     browserHistory.replace('/dashboard');
   } else if (isAuthenticatedPage && !isAuthenticated) {

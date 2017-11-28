@@ -10,19 +10,17 @@
   text-transform: uppercase;
 }
 
-// links disguised as buttons
 .button--link {
   display: inline-block;
-  // No underline for link
   text-decoration: none;
 }
 
 .button--pill {
-  background-color: transparent;
-  border: 1px solid $button-pill-color;
-  color: $button-pill-color;
-  margin: 0 ($space / 2) 0 0;
-  padding: .3rem .8rem;
+   background-color: transparent;
+   border: 1px solid $button-pill-color;
+   color: $button-pill-color;
+   margin: 0 ($space / 2) 0 0;
+   padding: .3rem .8rem;
 }
 
 .button--secondary {

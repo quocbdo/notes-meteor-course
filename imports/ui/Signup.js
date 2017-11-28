@@ -6,7 +6,7 @@ export default class Signup extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: ''
+      error: ''
     };
   }
   onSubmit(e) {
@@ -41,9 +41,9 @@ export default class Signup extends React.Component {
             <button className="button">Create Account</button>
           </form>
 
-          <Link to="/">Already have an account?</Link>
+          <Link to="/">Have an account?</Link>
         </div>
       </div>
     );
   }
-};
+}

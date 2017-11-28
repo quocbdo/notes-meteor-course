@@ -2,8 +2,6 @@ import React from 'react';
 
 import PrivateHeader from './PrivateHeader';
 
-// Link.js is "dumb" component, convert to
-// Stateless functional Component
 export default () => {
   return (
     <div>
@@ -14,16 +12,3 @@ export default () => {
     </div>
   );
 };
-
-// export default class Link extends React.Component {
-//   render() {
-//     return (
-//       <div>
-//         <PrivateHeader title="Dashboard"/>
-//         <LinksList/>
-//         <AddLink/>
-//       </div>
-//     );
-//   }
-// };
-
