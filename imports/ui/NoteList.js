@@ -22,7 +22,6 @@ export const NoteList = (props) => {
         Set up key prop equal to note _id
         Set up note prop
       */}
-      NoteList { props.notes.length }
     </div>
   );
 };
