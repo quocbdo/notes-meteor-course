@@ -1,7 +1,7 @@
 .editor {
   background-color: white;
-  display: flex;
   border: 1px solid $grey;
+  display: flex;
   flex-direction: column;
   padding: $large-space;
   width: 100%;
@@ -17,12 +17,12 @@
 }
 
 .editor__body {
-  flex-grow: 1;
-  font-weight: 300;
-  margin-bottom: $large-space;
-  outline: none;
-  padding: $input-spacing;
-  resize: none; // optional
+   flex-grow: 1;
+   font-weight: 300;
+   margin-bottom: $large-space;
+   outline: none;
+   padding: $input-spacing;
+   resize: none;
 }
 
 .editor__message {

@@ -17,7 +17,7 @@
   border-left: $item-border-width solid transparent;
   cursor: pointer;
   padding: $space;
-  transition: background-color .3s ease, border-left .3 ease;
+  transition: background-color .3s ease, border-left .3s ease;
 }
 
 .item:hover {
@@ -36,7 +36,7 @@
   margin-bottom: .4rem;
 }
 
-.item--selected, .item__title {
+.item--selected .item__title {
   font-weight: bold;
 }
 

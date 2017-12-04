@@ -45,5 +45,5 @@ $item-border-width: 4px;
 
 // Page Content
 $page-content-sidebar-width: 30rem; // sidebar takes 30% of total width
-$page-content-main-width: calc(#{$site-max-width} - #{page-content-sidebar-width});
+$page-content-main-width: calc(#{$site-max-width} - #{$page-content-sidebar-width});
 $page-content-height: calc(100vh - #{$header-height});
